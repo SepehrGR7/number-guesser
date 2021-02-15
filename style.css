@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Nothing You Could Do', cursive;
+   background-color: #333;
+   color: #ddd;
+}
+
+input[type='number'] {
+   font-family: 'Nothing You Could Do', monospace;
+   font-size: 3rem;
+   width: 200px;
+   background-color: transparent;
+   color: #ddd;
+   border: 4px solid #ddd;
+   text-align: center;
+   padding: 1rem 2rem;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+   appearance: none;
+}
+
+input:focus {
+   outline: none;
+}
+
+.btn {
+   font-family: 'Nothing You Could Do', monospace;
+   font-size: 1.2rem;
+   font-weight: 600;
+
+   background-color: transparent;
+   color: #ddd;
+
+   padding: 1rem 3rem;
+   border: 3px solid #ddd;
+   cursor: pointer;
+
+   transition: all 0.2s;
+}
+
+.btn:active {
+   transform: translateY(10%);
+}
+
+.btn:focus {
+   outline: none;
+}
+
+header {
+   border-bottom: 5px solid #ddd;
+   padding: 1rem 1rem 0;
+}
+
+header .top {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+header .top p {
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+header .bottom {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 3rem 0;
+}
+
+header .bottom h1 {
+   font-size: 4rem;
+}
+
+header .number {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 120px;
+   height: 120px;
+   font-size: 4.5rem;
+   font-weight: 700;
+   background-color: #ddd;
+   color: #333;
+   margin: auto auto -60px;
+}
+
+main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-top: 8rem;
+}
+
+main .left {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+main .left .guess {
+   margin-bottom: 2rem;
+}
+
+main .right p {
+   font-size: 2rem;
+   margin-bottom: 1.8rem;
+}
+
+.hidden {
+   display: none;
+}
+
+@media (max-width: 420px) {
+   header {
+      padding-top: 0;
+   }
+   header .top p {
+      display: none;
+   }
+
+   header .top .btn {
+      display: none;
+   }
+
+   header .bottom h1 {
+      font-size: 2.5rem;
+   }
+
+   header .number {
+      font-size: 3rem;
+      width: 100px;
+      height: 100px;
+      margin-bottom: -50px;
+   }
+
+   main {
+      display: flex;
+      flex-direction: column;
+      padding-top: 4rem;
+   }
+
+   main .left {
+      order: 2;
+   }
+
+   main .right {
+      order: 1;
+      text-align: center;
+      margin-bottom: 1rem;
+   }
+
+   main .right p {
+      margin-bottom: 1rem;
+   }
+
+   .hidden {
+      display: block;
+      margin-top: 1rem;
+   }
+}

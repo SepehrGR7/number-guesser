@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "prettier": "^2.2.1"
+  },
+  "prettier": {
+    "tabWidth": 3,
+    "singleQuote": true
+  }
+}
