@@ -9,7 +9,6 @@ const check = document.querySelector('.check');
 const tryAgain = document.querySelectorAll('.try-again');
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-console.log(secretNumber);
 let currentScore = 20;
 let highscore = 0;
 
